@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital Management System</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f8fb;
+}
+
+/* NAVBAR */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 60px;
+background:rgba(255,255,255,0.7);
+backdrop-filter:blur(10px);
+box-shadow:0 4px 20px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+width:45px;
+}
+
+.logo h2{
+color:#0b8fa1;
+font-weight:700;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:25px;
+align-items:center;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#0b8fa1;
+}
+
+/* LOGIN BUTTONS */
+.login-btn{
+padding:8px 16px;
+border-radius:20px;
+background:#0b8fa1;
+color:white !important;
+}
+
+/* HERO */
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:58px;
+font-weight:700;
+}
+
+.hero p{
+max-width:650px;
+margin-top:15px;
+font-size:20px;
+line-height:1.6;
+}
+
+.btn{
+padding:14px 32px;
+border:none;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+margin:10px;
+transition:0.3s;
+}
+
+.primary{
+background:#0b8fa1;
+color:white;
+}
+
+.primary:hover{
+background:#097481;
+transform:scale(1.05);
+}
+
+.secondary{
+background:white;
+color:#0b8fa1;
+}
+
+.secondary:hover{
+transform:scale(1.05);
+}
+
+/* ABOUT */
+.about{
+padding:80px 20px;
+text-align:center;
+background:white;
+}
+
+.about h2{
+font-size:36px;
+color:#0b8fa1;
+margin-bottom:20px;
+}
+
+.about p{
+max-width:800px;
+margin:auto;
+line-height:1.8;
+color:#444;
+font-size:17px;
+}
+
+/* CONTACT */
+.contact{
+padding:70px 20px;
+text-align:center;
+background:linear-gradient(135deg,#0b8fa1,#0f5c66);
+color:white;
+}
+
+.contact h2{
+font-size:34px;
+}
+
+.contact p{
+margin:15px 0;
+}
+
+.contact button{
+background:white;
+color:#0b8fa1;
+padding:14px 30px;
+border:none;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+background:#083c44;
+color:white;
+text-align:center;
+padding:18px;
+font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+
+<div class="logo">
+<img src="v987-18a.png">
+<h2>HMS</h2>
+</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+
+<!-- PATIENT LOGIN -->
+<li>
+<a class="login-btn" href="patient_login.php">
+Patient Login
+</a>
+</li>
+
+<!-- ADMIN LOGIN -->
+<li>
+<a class="login-btn" href="admin_login.html">
+Admin Login
+</a>
+</li>
+
+</ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Hospital Management System</h1>
+
+<p>
+Smart digital healthcare platform to book appointments,
+manage medical records, and ensure seamless hospital operations.
+We take care of your health while technology takes care of the rest.
+</p>
+
+<div>
+<a href="patient_login.php">
+<button class="btn primary">Book Appointment</button>
+</a>
+
+<a href="contact.html">
+<button class="btn secondary">Contact Us</button>
+</a>
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+<h2>About Us</h2>
+
+<p>
+Our Hospital Management System simplifies healthcare.
+Patients can book appointments, access prescriptions,
+and maintain medical history securely.
+
+Doctors and hospital staff manage schedules,
+records, and billing efficiently.
+We deliver fast and reliable healthcare services.
+</p>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+<h2>Need Assistance?</h2>
+<p>Contact our support team for appointments and help.</p>
+<a href="contact.html">
+<button>Contact Us</button>
+</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 Hospital Management System | Designed for DBMS Project
+</footer>
+
+</body>
+</html>
